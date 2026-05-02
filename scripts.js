@@ -32,6 +32,48 @@
     window.addEventListener('scroll', toggleScrolled, { passive: true });
   }
 
+  function initNavDropdowns() {
+    var dropdowns = document.querySelectorAll('.nav-dropdown');
+    if (!dropdowns.length) return;
+
+    dropdowns.forEach(function (dd) {
+      var trigger = dd.querySelector('.nav-dropdown-trigger');
+      if (!trigger) return;
+
+      trigger.addEventListener('click', function (e) {
+        e.preventDefault();
+        var isOpen = dd.classList.toggle('is-open');
+        trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        // Close any other open dropdown
+        dropdowns.forEach(function (other) {
+          if (other !== dd) {
+            other.classList.remove('is-open');
+            var t = other.querySelector('.nav-dropdown-trigger');
+            if (t) t.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+
+      trigger.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          dd.classList.remove('is-open');
+          trigger.setAttribute('aria-expanded', 'false');
+          trigger.blur();
+        }
+      });
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        dropdowns.forEach(function (dd) {
+          dd.classList.remove('is-open');
+          var t = dd.querySelector('.nav-dropdown-trigger');
+          if (t) t.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+  }
+
   function initMobileNav() {
     var toggle = document.querySelector('.nav-toggle');
     var nav = document.querySelector('.nav');
@@ -290,6 +332,7 @@
     initIcons();
     initYear();
     initNavScroll();
+    initNavDropdowns();
     initMobileNav();
     initMarquee();
     initStatCounters();

@@ -34,7 +34,33 @@
         <img src="images/logo/logo.webp" alt="Mooresville Brazilian Jiu-Jitsu" class="nav-logo-img" loading="eager" decoding="async">
       </a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li><li><a href="instructors.html">Instructors</a></li><li><a href="schedule.html" class="active">Schedule</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="affiliation.html">Lineage</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html" class="active">Schedule</a></li>
+        <li><a href="instructors.html">Instructors</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li class="nav-dropdown">
+          <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            Affiliations
+            <i class="caret" data-lucide="chevron-down" width="14" height="14"></i>
+          </button>
+          <ul class="nav-dropdown-menu" role="menu">
+            <li><a href="affiliation.html" role="menuitem">Tom DeBlass<span class="menu-sub">Lineage · Renzo Gracie</span></a></li>
+            <li><a href="heroes-jiu-jitsu.html" role="menuitem">Heroes Jiu-Jitsu<span class="menu-sub">Free class · vets, first responders, teachers</span></a></li>
+            <li><a href="adopt-a-cop.html" role="menuitem">Adopt A Cop BJJ<span class="menu-sub">Free training for active-duty police</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <button type="button" class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            More
+            <i class="caret" data-lucide="chevron-down" width="14" height="14"></i>
+          </button>
+          <ul class="nav-dropdown-menu" role="menu">
+            <li><a href="dress-code.html" role="menuitem">Dress Code<span class="menu-sub">What to wear to class</span></a></li>
+            <li><a href="reviews.html" role="menuitem">Reviews<span class="menu-sub">103 five-star reviews</span></a></li>
+            <li><a href="faqs.html" role="menuitem">FAQs<span class="menu-sub">First class, school rules</span></a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
       <button class="nav-cta" data-cta="lead-modal" type="button">Free Class<i class="arrow" data-lucide="arrow-right" width="16" height="16"></i></button>
       <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><i data-lucide="menu" width="20" height="20"></i></button>
