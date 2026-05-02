@@ -220,12 +220,6 @@ body::after {
 
 .nav.scrolled::before { opacity: 0; }
 
-/* Inner pages (no full-bleed hero photo) — navbar gets a solid background
-   from page load instead of waiting for scroll. Prevents marquee/content
-   from bleeding through. Hero pages keep the photo-fade scrim. */
-body:not(.has-hero) .nav { background: rgba(11, 10, 8, 0.95); border-bottom: 1px solid var(--border); }
-body:not(.has-hero) .nav::before { opacity: 0; }
-
 .nav.open {
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
