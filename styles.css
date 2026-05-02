@@ -1,6 +1,7 @@
 /* ==========================================================================
    MOORESVILLE BRAZILIAN JIU-JITSU
-   Performance Athletic Skill — Gold (#D4B260) on Warm True Black (#0B0A08)
+   Performance Athletic Skill — Brand Gold (#B79C54) on Warm True Black (#0B0A08)
+   Hero h1 accent uses a brushed-metal gold gradient (no white) for championship-belt depth.
    Archivo Black display · Inter body · Rubik Mono One stencil
    Tom DeBlass Affiliate · Heroes Jiu-Jitsu · Adopt A Cop BJJ
    ========================================================================== */
@@ -12,17 +13,17 @@
   --bg-card: #15130E;
   --bg-elev: #1E1A12;
   --bg-inverse: #F5EFE3;
-  --border: rgba(212, 178, 96, 0.10);
-  --border-strong: rgba(212, 178, 96, 0.22);
+  --border: rgba(183, 156, 84, 0.10);
+  --border-strong: rgba(183, 156, 84, 0.22);
   --text: #F5EFE3;
   --text-muted: #8C8474;
   --text-inverse: #0B0A08;
-  --accent: #D4B260;
-  --accent-hot: #E5C271;
-  --accent-hover: #A88846;
-  --accent-deep: #7A6230;
-  --accent-subtle: rgba(212, 178, 96, 0.12);
-  --accent-glow: rgba(212, 178, 96, 0.35);
+  --accent: #B79C54;
+  --accent-hot: #C9AE63;
+  --accent-hover: #93803F;
+  --accent-deep: #6B5B30;
+  --accent-subtle: rgba(183, 156, 84, 0.12);
+  --accent-glow: rgba(183, 156, 84, 0.35);
   --secondary: #5C4A3A;
   --tertiary: #2B4263;
 
@@ -459,17 +460,29 @@ body::after {
     0 20px 42px rgba(0, 0, 0, 0.45);
 }
 
+/* Brushed-metal championship-gold treatment — bright highlight at top,
+   brand gold #B79C54 in the body, deep bronze at the bottom. No white.
+   Reads like a polished belt-stripe / trophy plate. */
 .hero h1 .accent-line {
   display: block;
   color: transparent;
-  background: linear-gradient(180deg, #F5EFE3 0%, #D4B260 48%, #A88846 100%);
+  background:
+    linear-gradient(180deg,
+      #E2D094 0%,    /* champagne highlight */
+      #C9AE63 22%,   /* brushed lift */
+      #B79C54 50%,   /* core brand gold */
+      #93803F 78%,   /* shadow side */
+      #6B5B30 100%   /* deep bronze edge */
+    );
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: none;
+  /* Subtle "embossed into metal" depth — outline + drop shadows */
   filter:
-    drop-shadow(0 1px 0 rgba(0, 0, 0, 0.7))
-    drop-shadow(0 2px 10px rgba(0, 0, 0, 0.55))
-    drop-shadow(0 20px 42px rgba(0, 0, 0, 0.55));
+    drop-shadow(0 1px 0 rgba(0, 0, 0, 0.85))
+    drop-shadow(0 2px 8px rgba(107, 91, 48, 0.45))
+    drop-shadow(0 18px 38px rgba(0, 0, 0, 0.55));
+  position: relative;
 }
 
 .hero-lead {
@@ -565,7 +578,8 @@ body::after {
 
 /* ---------- 7. MARQUEE ---------- */
 .marquee {
-  background: linear-gradient(180deg, #E8D4A0 0%, #D4B260 50%, #A88846 100%);
+  /* Belt-stripe brushed gold — same family as hero accent-line for consistency */
+  background: linear-gradient(180deg, #D6C078 0%, #B79C54 50%, #93803F 100%);
   color: var(--text-inverse);
   overflow: hidden;
   padding-block: var(--space-lg);
