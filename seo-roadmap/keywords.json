@@ -1,0 +1,82 @@
+{
+  "client": "Mooresville BJJ",
+  "slug": "mooresville-bjj",
+  "city": "Mooresville",
+  "state": "NC",
+  "zip": "28117",
+  "metro": "Charlotte / Lake Norman / Iredell County",
+  "neighborhoods": [
+    {"name": "Mooresville (downtown)", "zip": "28115", "validated": true},
+    {"name": "The Point", "zip": "28117", "validated": false, "note": "high-income peninsula on Lake Norman — Brawley School Rd"},
+    {"name": "Brawley School Rd", "zip": "28117", "validated": false},
+    {"name": "Morrison Plantation", "zip": "28117", "validated": false},
+    {"name": "Curtis Pond", "zip": "28117", "validated": false}
+  ],
+  "nearbyTowns": [
+    {"name": "Davidson", "zip": "28036", "miles": 8, "validated": true},
+    {"name": "Cornelius", "zip": "28031", "miles": 10, "validated": true},
+    {"name": "Huntersville", "zip": "28078", "miles": 12, "validated": true},
+    {"name": "Statesville", "zip": "28625", "miles": 14, "validated": true},
+    {"name": "Troutman", "zip": "28166", "miles": 7, "validated": true},
+    {"name": "Sherrills Ford", "zip": "28673", "miles": 10, "validated": false, "note": "across Lake Norman, west side"},
+    {"name": "Terrell", "zip": "28682", "miles": 13, "validated": false},
+    {"name": "Denver (NC)", "zip": "28037", "miles": 15, "validated": false},
+    {"name": "Mt Mourne", "zip": "28117", "miles": 5, "validated": false},
+    {"name": "Concord", "zip": "28025", "miles": 23, "validated": false, "note": "edge of metro — Phase 5 only"},
+    {"name": "Kannapolis", "zip": "28081", "miles": 22, "validated": false, "note": "Phase 5 edge"}
+  ],
+  "validationFlag": "neighborhoods + zip codes are best-effort based on Lake Norman / Iredell County common knowledge. The user (a Mooresville-market expert via MMA Marketing Pro) should validate or correct neighborhoods + commute distances before phase 1 ships.",
+  "services": [
+    {"key": "adult-bjj", "label": "Adult Brazilian Jiu-Jitsu", "shortLabel": "Adult BJJ"},
+    {"key": "kids-bjj-5-7", "label": "Kids Jiu-Jitsu (Ages 5-7)", "shortLabel": "Kids BJJ 5-7"},
+    {"key": "kids-bjj-8-12", "label": "Kids Jiu-Jitsu (Ages 8-12)", "shortLabel": "Kids BJJ 8-12"},
+    {"key": "no-gi", "label": "No-Gi Jiu-Jitsu", "shortLabel": "No-Gi BJJ"},
+    {"key": "fitness", "label": "Fitness & Weight Loss", "shortLabel": "BJJ Fitness"},
+    {"key": "competition", "label": "Competition Class", "shortLabel": "BJJ Competition"},
+    {"key": "self-defense", "label": "Self-Defense BJJ", "shortLabel": "Self-Defense"}
+  ],
+  "personas": [
+    {"key": "beginners", "label": "Beginners"},
+    {"key": "adults-40-plus", "label": "Adults Over 40"},
+    {"key": "adults-50-plus", "label": "Adults Over 50"},
+    {"key": "women", "label": "Women"},
+    {"key": "teens", "label": "Teens (13-17)"},
+    {"key": "first-responders", "label": "First Responders / Veterans / Teachers"},
+    {"key": "police", "label": "Active-Duty Police (Adopt A Cop)"},
+    {"key": "competitors", "label": "Competitors / Tournament Athletes"}
+  ],
+  "competitorStyles": [
+    "Karate", "Wrestling", "Judo", "MMA", "Krav Maga", "Tae Kwon Do", "Boxing", "Aikido"
+  ],
+  "glossaryTerms": [
+    "What is Brazilian Jiu-Jitsu",
+    "What is No-Gi BJJ",
+    "What is the BJJ belt system",
+    "What is rolling in BJJ",
+    "What is randori",
+    "What is the Gi (kimono)",
+    "What is a tap-out",
+    "Common BJJ submissions",
+    "Guard positions in BJJ",
+    "Mount position in BJJ",
+    "Side control in BJJ",
+    "How long to get a black belt in BJJ",
+    "Is BJJ safe for kids",
+    "BJJ for self-defense — does it work",
+    "What does Tom DeBlass affiliate mean"
+  ],
+  "specialPrograms": [
+    {"key": "heroes-jj", "label": "Heroes Jiu-Jitsu Movement (free for vets/first responders/teachers)"},
+    {"key": "adopt-a-cop", "label": "Adopt A Cop BJJ (free for active-duty police)"}
+  ],
+  "matrixCounts": {
+    "locations": 80,
+    "personas": 30,
+    "curation": 8,
+    "glossary": 15,
+    "comparisons": 6,
+    "tutorials": 8,
+    "offers": 3,
+    "total": 150
+  }
+}

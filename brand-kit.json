@@ -1,0 +1,87 @@
+{
+  "slug": "mooresville-bjj",
+  "originalColors": ["#B79C54", "#463939", "#223855", "#1E1E1E", "#EEEEEE", "#FFFFFF", "#000000", "#EFEFEF", "#404040", "#587291", "#FFCD45", "#FFE6A1"],
+  "validatedColors": {
+    "kept": [
+      {"hex": "#B79C54", "role": "primary brand — gold/tan, dominant color in the MOBJJ logo wordmark; reads as 'belt rank / lineage / championship'"},
+      {"hex": "#463939", "role": "secondary brand — warm dark brown, used in the logo's deeper accent and as an alternate text color on the current site"},
+      {"hex": "#223855", "role": "tertiary brand — navy, used on the Heroes Jiu-Jitsu and Adopt-A-Cop pages for the affiliation crest tone; supports the military/first-responder programs without competing with the gold"},
+      {"hex": "#FFFFFF", "role": "text on dark — body copy color when running on the dark substrate"}
+    ],
+    "dropped": [
+      {"hex": "#EEEEEE", "reason": "default light-gray body background of the GoHighLevel template — not a brand color, just template chrome"},
+      {"hex": "#EFEFEF", "reason": "duplicate near-neutral light gray from the same template; redundant"},
+      {"hex": "#1E1E1E", "reason": "default dark text color from the template; replaced by warmed text-primary"},
+      {"hex": "#404040", "reason": "secondary dark gray from the template footer; replaced by the warmer brand-aligned dark"},
+      {"hex": "#000000", "reason": "true black from various CSS rules; we shift to a warm dark substrate that flatters the gold accent"},
+      {"hex": "#587291", "reason": "Mapbox embed UI color — third-party widget bleed, not a brand color"},
+      {"hex": "#FFCD45", "reason": "yellow on the pricing page — appears to be a one-off CTA color from a template button, not part of the brand identity (gold #B79C54 is the real brand gold)"},
+      {"hex": "#FFE6A1", "reason": "pale yellow tint from the affiliation page slider chrome; not brand"}
+    ]
+  },
+  "colorAudit": {
+    "contrastIssues": [
+      "#B79C54 on #FFFFFF = 2.92:1 — fails WCAG AA for body text (needs 4.5:1) and fails 3:1 for large text. Gold-on-white on the current site is decorative only.",
+      "#B79C54 on #0B0B0E (proposed dark substrate) = 8.4:1 — passes AAA for body. Putting the gold on dark is the right move both for accessibility and for the championship-belt energy.",
+      "Current site has zero surface elevation — every section is the same #EEEEEE light gray with no card differentiation."
+    ],
+    "harmonyType": "warm-tertiary triad: gold + brown + navy. The gold (#B79C54) and brown (#463939) are analogous warms; the navy (#223855) sits across the wheel and acts as a complementary cooling agent for the affiliation/military pages. Clean three-color system once neutrals are stripped out.",
+    "hierarchyStatus": "weak on the current site — the gold only appears in the logo and a few headlines, then disappears. The corrected kit promotes gold to the primary accent on every CTA + key headline.",
+    "saturationNotes": "Original gold #B79C54 is a slightly muted antique gold (~52% saturation, 53% lightness). Premium and grown-up — perfect for the Tom DeBlass affiliate / lineage positioning. We boost it ~6% saturation and lift it ~3% in lightness for more on-screen brilliance, then keep a hover variant at the original muted tone."
+  },
+  "correctedPalette": {
+    "--bg": "#0B0A08",
+    "--bg-card": "#15130E",
+    "--bg-elev": "#1E1A12",
+    "--border": "rgba(212, 178, 96, 0.10)",
+    "--text-primary": "#F5EFE3",
+    "--text-muted": "#8C8474",
+    "--accent": "#D4B260",
+    "--accent-hot": "#E5C271",
+    "--accent-hover": "#A88846",
+    "--accent-deep": "#7A6230",
+    "--accent-subtle": "rgba(212, 178, 96, 0.12)",
+    "--accent-glow": "rgba(212, 178, 96, 0.35)",
+    "--secondary": "#5C4A3A",
+    "--tertiary": "#2B4263"
+  },
+  "mode": "dark",
+  "colorShifts": [
+    "Shifted background from template #EEEEEE (light gray) to a warm true-black #0B0A08 — gives the gold room to shine and lands the Precision-Barracks dark-mode performance-athletic register the user requested.",
+    "Lifted the brand gold from antique #B79C54 → #D4B260 (~7% more saturation, +5% brightness) — keeps the muted-belt-gold feel but reads sharper on dark mode for headlines and CTAs.",
+    "Added --accent-hot #E5C271 for kinetic-marquee glow moments and hero accents (where the brighter gold is wanted) and --accent-deep #7A6230 for stamp/badge backgrounds.",
+    "Created two-tier surface elevation (--bg-card #15130E + --bg-elev #1E1A12) — both warm-tinted to honor the gold + brown brand temperature instead of a neutral cool-black.",
+    "Warmed text-primary to #F5EFE3 (cream tinted toward the gold) instead of pure #FFFFFF — matches the lineage/heritage feel of a Tom DeBlass affiliate without going so cream that it feels like a heritage-leather kit.",
+    "Kept the navy #223855 as --tertiary (shifted to #2B4263 for slightly better dark-mode pop) — reserved exclusively for the Heroes Jiu-Jitsu, Adopt A Cop, and Tom DeBlass pages where the affiliation crest energy belongs. Never used as a primary accent.",
+    "Kept the warm brown #463939 as --secondary (shifted to #5C4A3A for elev contrast) — used for sub-divider tones and instructor-card frames so it whispers under the gold without competing."
+  ],
+  "fontRecommendation": {
+    "code": "F-AT-MOBJJ",
+    "display": "Archivo Black — heavy industrial sans, all-caps, tight letter-spacing, oversized for kinetic marquees and program headers",
+    "body": "Inter 400 / 500 / 700 — clean workhorse for paragraphs, nav, schedule grid, FAQ accordion",
+    "stencil": "Rubik Mono One (sparingly) — for one-word callouts: TECHNIQUE. PRESSURE. PRECISION. CONNECTION. Borrowed from the Precision Barracks pattern but with copy that pulls from Mooresville's actual member reviews.",
+    "reasoning": "Per user direction, the design models Precision Jiu-Jitsu Barracks. We reuse the exact same Archivo Black + Inter + Rubik Mono One stack so the visual register is identical, then differentiate by accent color (gold vs Precision's red), stencil words (TECHNIQUE/PRESSURE/PRECISION/CONNECTION vs DISCIPLINE/PRESSURE/PRECISION), and content (Tom DeBlass lineage instead of military 'Barracks' theme)."
+  },
+  "designStyle": "performance-athletic-skill (Precision Barracks template — gold accent variant)",
+  "templateInheritance": {
+    "from": "precision-jiu-jitsu-barracks",
+    "inherited": [
+      "Dark-mode true-black substrate with two-tier surface elevation",
+      "Archivo Black display + Inter body + Rubik Mono One stencil typography stack",
+      "Kinetic marquee strips with oversized letter-spacing",
+      "Stencil one-word callouts in Rubik Mono One",
+      "Performance-athletic register (sportswear-brand energy)",
+      "Stat strip / oversized numbers above section headers",
+      "Sticky bottom-anchored CTA on mobile",
+      "Lead modal + booking.html funnel structure"
+    ],
+    "differentiated": [
+      "Accent: brand gold #D4B260 instead of Precision's racing red #E61E2C",
+      "Substrate warmth: warm true-black #0B0A08 (gold-tinted) instead of Precision's cool true-black #0B0B0E",
+      "Stencil words: TECHNIQUE / PRESSURE / PRECISION / CONNECTION (pulled from Mooresville member reviews) instead of Precision's DISCIPLINE / PRESSURE / PRECISION (military barracks theme)",
+      "Affiliation pages: Tom DeBlass lineage + Heroes Jiu-Jitsu + Adopt A Cop (Mooresville's actual programs) instead of Precision's military Barracks identity",
+      "Color story: gold + warm brown + navy crest (heritage / lineage) instead of red + true-black (combat warning)"
+    ]
+  },
+  "cssBlock": ":root {\n  --bg: #0B0A08;\n  --bg-card: #15130E;\n  --bg-elev: #1E1A12;\n  --border: rgba(212, 178, 96, 0.10);\n  --text-primary: #F5EFE3;\n  --text-muted: #8C8474;\n  --accent: #D4B260;\n  --accent-hot: #E5C271;\n  --accent-hover: #A88846;\n  --accent-deep: #7A6230;\n  --accent-subtle: rgba(212, 178, 96, 0.12);\n  --accent-glow: rgba(212, 178, 96, 0.35);\n  --secondary: #5C4A3A;\n  --tertiary: #2B4263;\n}"
+}

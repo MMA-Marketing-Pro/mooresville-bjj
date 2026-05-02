@@ -1,0 +1,5 @@
+# Scrape artifacts — not part of deployable site, contain third-party access tokens
+scrape-*.json
+pages.json
+screenshot-before.png
+screenshots/
