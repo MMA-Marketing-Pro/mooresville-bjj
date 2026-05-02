@@ -198,14 +198,7 @@ body::after {
   position: absolute;
   inset: 0 0 auto 0;
   height: 140px;
-  /* Solid at the navbar height so nothing bleeds through behind the links,
-     then fades to transparent below so the hero photo still breathes through. */
-  background: linear-gradient(180deg,
-    rgba(11, 10, 8, 0.96) 0%,
-    rgba(11, 10, 8, 0.96) 52%,
-    rgba(11, 10, 8, 0.55) 78%,
-    rgba(11, 10, 8, 0) 100%
-  );
+  background: linear-gradient(180deg, rgba(8, 8, 6, 0.86) 0%, rgba(8, 8, 6, 0.4) 55%, rgba(8, 8, 6, 0) 100%);
   pointer-events: none;
   z-index: -1;
   transition: opacity 0.3s var(--ease);
