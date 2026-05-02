@@ -3,3 +3,4 @@ scrape-*.json
 pages.json
 screenshot-before.png
 screenshots/
+.DS_Store
