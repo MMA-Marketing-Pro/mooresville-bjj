@@ -313,6 +313,55 @@
     } catch (err) {}
   }
 
+  function initScrollRail() {
+    var fill = document.querySelector('.scroll-rail-fill');
+    if (!fill) return;
+    var update = function () {
+      var scrollTop = window.scrollY || document.documentElement.scrollTop;
+      var height = (document.documentElement.scrollHeight - window.innerHeight) || 1;
+      var pct = Math.max(0, Math.min(1, scrollTop / height));
+      fill.style.height = (pct * 100).toFixed(2) + '%';
+    };
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update, { passive: true });
+  }
+
+  function initProgramCardParallax() {
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (window.matchMedia && window.matchMedia('(hover: none)').matches) return;
+    var cards = document.querySelectorAll('.program-card');
+    cards.forEach(function (card) {
+      card.addEventListener('mousemove', function (e) {
+        var rect = card.getBoundingClientRect();
+        var x = (e.clientX - rect.left) / rect.width - 0.5;
+        var y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.setProperty('--tilt-x', (-x).toFixed(3));
+        card.style.setProperty('--tilt-y', (-y).toFixed(3));
+      });
+      card.addEventListener('mouseleave', function () {
+        card.style.setProperty('--tilt-x', 0);
+        card.style.setProperty('--tilt-y', 0);
+      });
+    });
+  }
+
+  function initBigCtaGhostWord() {
+    var nodes = document.querySelectorAll('[data-rotate-word]');
+    if (!nodes.length) return;
+    var words = ['TECHNIQUE', 'PRESSURE', 'PRECISION', 'CONNECTION'];
+    var idx = Math.floor(Math.random() * words.length);
+    nodes.forEach(function (node) {
+      var word = words[idx % words.length];
+      node.setAttribute('data-ghost-word', word);
+      // Inject into existing ::before via CSS variable fallback — set inline style for content
+      var style = document.createElement('style');
+      style.textContent = '.big-cta[data-ghost-word="' + word + '"]::before { content: "' + word + '"; }';
+      document.head.appendChild(style);
+      idx++;
+    });
+  }
+
   function initMagneticButtons() {
     var buttons = document.querySelectorAll('.btn-primary, .nav-cta');
     buttons.forEach(function (btn) {
@@ -340,6 +389,9 @@
     initLeadModal();
     initBookingPage();
     initMagneticButtons();
+    initScrollRail();
+    initProgramCardParallax();
+    initBigCtaGhostWord();
   }
 
   if (document.readyState === 'loading') {

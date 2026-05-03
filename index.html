@@ -102,6 +102,9 @@
 </head>
 <body>
 
+  <!-- ============================== SCROLL PROGRESS RAIL ============================== -->
+  <div class="scroll-rail" aria-hidden="true"><div class="scroll-rail-fill"></div></div>
+
   <!-- ============================== NAV ============================== -->
   <nav class="nav" id="mainNav">
     <div class="nav-inner">
@@ -189,6 +192,11 @@
           <span class="accent-line">Brazilian Jiu-Jitsu.</span>
         </h1>
 
+        <div class="hero-stamp">
+          <span class="hero-stamp-corner" aria-hidden="true"></span>
+          Est. 2018 · Tom DeBlass Affiliate · Renzo Gracie Lineage
+        </div>
+
         <p class="hero-lead">
           Hands-on instruction from world-class black belts. Adults, kids, and families training side-by-side in a welcoming, supportive room. Whether you came for self-defense, fitness, or to be part of a great team — MOBJJ becomes a positive, motivating force in your life.
         </p>
@@ -207,17 +215,27 @@
     </div>
   </section>
 
-  <!-- ============================== MARQUEE 1 ============================== -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span class="marquee-item">Technique<span class="marquee-star"></span></span>
-      <span class="marquee-item">Pressure<span class="marquee-star"></span></span>
-      <span class="marquee-item">Precision<span class="marquee-star"></span></span>
-      <span class="marquee-item">Connection<span class="marquee-star"></span></span>
-      <span class="marquee-item">Tom DeBlass Affiliate<span class="marquee-star"></span></span>
-      <span class="marquee-item">Black Belt Led<span class="marquee-star"></span></span>
+  <!-- ============================== TRUST STRIP ============================== -->
+  <section class="trust-strip" aria-label="Academy social proof">
+    <div class="trust-strip-inner">
+      <div class="trust-item">
+        <span class="trust-stars" aria-hidden="true">★★★★★</span>
+        <span class="trust-text"><strong>5.0</strong>Google Rating</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-text"><strong>103</strong>Five-Star Reviews</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-text"><strong>100+</strong>Active Students</span>
+      </div>
+      <div class="trust-item trust-item--hide-md">
+        <span class="trust-text"><strong>4</strong>Black-Belt Coaches</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-text"><strong>Tom DeBlass</strong>Affiliate</span>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- ============================== WELCOME ============================== -->
   <section class="section">
@@ -287,7 +305,10 @@
           <img src="images/gallery/adult-bjj-action.webp"
                data-local="images/gallery/adult-bjj-class.jpg"
                alt="Adult Brazilian Jiu-Jitsu class at Mooresville BJJ">
-          <div class="program-card-num">PG / 01</div>
+          <span class="program-card-rail" aria-hidden="true"></span>
+          <span class="program-card-bracket bracket-tl" aria-hidden="true"></span>
+          <span class="program-card-bracket bracket-br" aria-hidden="true"></span>
+          <div class="program-card-num">01</div>
           <div class="program-card-inner">
             <span class="program-card-meta">Gi + No-Gi · All Levels</span>
             <h3>Adult<br>Jiu-Jitsu</h3>
@@ -300,7 +321,10 @@
           <img src="images/gallery/kids-kimura.webp"
                data-local="images/gallery/kids-bjj-young.jpg"
                alt="Kids Jiu-Jitsu ages 5 to 7 at Mooresville BJJ">
-          <div class="program-card-num">PG / 02</div>
+          <span class="program-card-rail" aria-hidden="true"></span>
+          <span class="program-card-bracket bracket-tl" aria-hidden="true"></span>
+          <span class="program-card-bracket bracket-br" aria-hidden="true"></span>
+          <div class="program-card-num">02</div>
           <div class="program-card-inner">
             <span class="program-card-meta">Ages 5 – 7 · Coordination · Confidence</span>
             <h3>Kids BJJ<br>5–7.</h3>
@@ -313,7 +337,10 @@
           <img src="images/gallery/kids-podium.webp"
                data-local="images/gallery/kids-bjj-older.jpg"
                alt="Kids Jiu-Jitsu ages 8 to 12 at Mooresville BJJ">
-          <div class="program-card-num">PG / 03</div>
+          <span class="program-card-rail" aria-hidden="true"></span>
+          <span class="program-card-bracket bracket-tl" aria-hidden="true"></span>
+          <span class="program-card-bracket bracket-br" aria-hidden="true"></span>
+          <div class="program-card-num">03</div>
           <div class="program-card-inner">
             <span class="program-card-meta">Ages 8 – 12 · Discipline · Self-Defense</span>
             <h3>Kids BJJ<br>8–12.</h3>
@@ -326,7 +353,10 @@
           <img src="images/gallery/ibjjf-podium.webp"
                data-local="images/gallery/competition-team.jpg"
                alt="Competition class drilling at Mooresville BJJ">
-          <div class="program-card-num">PG / 04</div>
+          <span class="program-card-rail" aria-hidden="true"></span>
+          <span class="program-card-bracket bracket-tl" aria-hidden="true"></span>
+          <span class="program-card-bracket bracket-br" aria-hidden="true"></span>
+          <div class="program-card-num">04</div>
           <div class="program-card-inner">
             <span class="program-card-meta">Advanced · Live Rolling · Strategy</span>
             <h3>Competition<br>Class.</h3>
@@ -338,17 +368,41 @@
     </div>
   </section>
 
-  <!-- ============================== STENCIL CALLOUT ============================== -->
-  <div class="stencil-strip" aria-hidden="true">
+  <!-- ============================== FOUR PILLARS ============================== -->
+  <section class="pillars-section" aria-label="Our four training pillars">
     <div class="container">
-      <div class="stencil-strip-words">
-        <span>Technique.</span><span class="dot">·</span>
-        <span>Pressure.</span><span class="dot">·</span>
-        <span>Precision.</span><span class="dot">·</span>
-        <span>Connection.</span>
+      <div class="pillars-eyebrow">
+        <span class="pillars-eyebrow-rule"></span>
+        How we train
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <span class="pillar-tag">/ 01</span>
+          <span class="pillar-word">Technique</span>
+          <span class="pillar-rule" aria-hidden="true"></span>
+          <p class="pillar-desc">Drilled until it works under live pressure — not just on a still partner.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-tag">/ 02</span>
+          <span class="pillar-word">Pressure</span>
+          <span class="pillar-rule" aria-hidden="true"></span>
+          <p class="pillar-desc">Top game, smother passes, and the kind of weight that wins in competition.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-tag">/ 03</span>
+          <span class="pillar-word">Precision</span>
+          <span class="pillar-rule" aria-hidden="true"></span>
+          <p class="pillar-desc">Black-belt detail on every grip, frame, and angle — small things, big results.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar-tag">/ 04</span>
+          <span class="pillar-word">Connection</span>
+          <span class="pillar-rule" aria-hidden="true"></span>
+          <p class="pillar-desc">A welcoming room of training partners who become lifelong friends.</p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- ============================== FEATURE GRID ============================== -->
   <section class="section">
@@ -474,7 +528,11 @@
   <!-- ============================== BIG CTA ============================== -->
   <section class="section">
     <div class="container">
-      <div class="big-cta fade-in-up">
+      <div class="big-cta fade-in-up" data-rotate-word>
+        <span class="big-cta-bracket bracket-tl" aria-hidden="true"></span>
+        <span class="big-cta-bracket bracket-tr" aria-hidden="true"></span>
+        <span class="big-cta-bracket bracket-bl" aria-hidden="true"></span>
+        <span class="big-cta-bracket bracket-br" aria-hidden="true"></span>
         <div class="big-cta-eyebrow">Your first class is on us. Zero risk.</div>
         <h2>
           Walk in nervous.
