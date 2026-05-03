@@ -2196,6 +2196,34 @@ body::after {
   background: var(--bg);
 }
 
+.booking-embed-wrap {
+  background: var(--bg-elev, #ffffff);
+  border: 1px solid var(--border, rgba(0,0,0,0.08));
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+  min-height: 560px;
+  overflow: hidden;
+}
+
+.booking-embed-wrap .gymdesk-booking {
+  width: 100%;
+}
+
+.booking-embed-wrap iframe {
+  width: 100% !important;
+  min-height: 560px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .booking-embed-wrap {
+    padding: 12px;
+    border-radius: 12px;
+  }
+}
+
 .lead-modal__row {
   display: grid;
   grid-template-columns: 1fr 1fr;
