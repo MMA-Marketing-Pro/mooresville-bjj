@@ -2196,7 +2196,8 @@ body::after {
   background: var(--bg);
 }
 
-.booking-embed-wrap {
+.booking-embed-wrap,
+.schedule-embed-wrap {
   background: var(--bg-elev, #ffffff);
   border: 1px solid var(--border, rgba(0,0,0,0.08));
   border-radius: 16px;
@@ -2206,11 +2207,13 @@ body::after {
   overflow: hidden;
 }
 
-.booking-embed-wrap .gymdesk-booking {
+.booking-embed-wrap .gymdesk-booking,
+.schedule-embed-wrap .maonrails-schedule {
   width: 100%;
 }
 
-.booking-embed-wrap iframe {
+.booking-embed-wrap iframe,
+.schedule-embed-wrap iframe {
   width: 100% !important;
   min-height: 560px;
   border: 0;
@@ -2218,7 +2221,8 @@ body::after {
 }
 
 @media (max-width: 640px) {
-  .booking-embed-wrap {
+  .booking-embed-wrap,
+  .schedule-embed-wrap {
     padding: 12px;
     border-radius: 12px;
   }
