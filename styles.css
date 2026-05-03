@@ -325,6 +325,23 @@ body::after {
 .nav-links a:hover::after,
 .nav-links a.active::after { width: 100%; }
 
+/* Shop link — small external-link glyph after the label, fades on hover */
+.nav-shop-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.nav-ext-icon {
+  opacity: 0.55;
+  transition: opacity 0.25s var(--ease), transform 0.25s var(--ease);
+  position: relative;
+  top: -1px;
+}
+.nav-shop-link:hover .nav-ext-icon {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
 /* ---------- Desktop dropdown menus ---------- */
 .nav-dropdown { position: relative; }
 
