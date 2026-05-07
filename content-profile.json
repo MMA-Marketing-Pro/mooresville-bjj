@@ -1,12 +1,12 @@
 {
-  "name": "Mooresville BJJ",
+  "name": "Mooresville Brazilian Jiu-Jitsu",
   "slug": "mooresville-bjj",
   "website": "https://www.mooresvillebjj.com",
   "businessType": "Brazilian Jiu-Jitsu academy (adults + kids)",
   "tagline": "Mooresville Brazilian Jiu-Jitsu — Join a Community That Supports Your Growth",
   "city": "Mooresville",
   "state": "NC",
-  "address": "243 Overhill Dr, Mooresville, NC 28117",
+  "address": "243 Overhill Dr Suite A, Mooresville, NC 28117",
   "phone": "704-360-0159",
   "email": "mooresvillebjj@gmail.com",
   "siteStructure": {
@@ -25,18 +25,17 @@
       {"url": "https://www.mooresvillebjj.com/heros-jiu-jitsu-movement", "label": "Heroes Jiu-Jitsu", "slug": "heroes-jiu-jitsu", "type": "page", "screenshotPath": "sites/mooresville-bjj/screenshots/heros-jiu-jitsu-movement-before.png"},
       {"url": "https://www.mooresvillebjj.com/adopt-a-cop-bjj", "label": "Adopt a Cop BJJ", "slug": "adopt-a-cop", "type": "page", "screenshotPath": "sites/mooresville-bjj/screenshots/adopt-a-cop-bjj-before.png"},
       {"url": "https://www.mooresvillebjj.com/competition", "label": "Competition", "slug": "competition", "type": "page", "screenshotPath": "sites/mooresville-bjj/screenshots/competition-before.png"},
-      {"url": "https://www.mooresvillebjj.com/fitness-weight-loss", "label": "Fitness & Weight Loss", "slug": "fitness-weight-loss", "type": "page", "screenshotPath": "sites/mooresville-bjj/screenshots/fitness-weight-loss-before.png"},
       {"url": "https://www.mooresvillebjj.com/dress-code", "label": "Dress Code", "slug": "dress-code", "type": "page", "screenshotPath": "sites/mooresville-bjj/screenshots/dress-code-before.png"}
     ]
   },
   "pageContent": {
     "home": {
       "heroHeadline": "Mooresville Brazilian Jiu-Jitsu",
-      "heroSubtext": "Hands-on instruction from world-class black-belt instructors. Whether your goal is self-defense, fitness, weight loss, confidence, or finding a great team — MOBJJ will be a positive, motivating force in your life.",
+      "heroSubtext": "Hands-on instruction from world-class black-belt instructors. Whether your goal is self-defense, fitness, weight loss, confidence, or finding a great team — Mooresville Brazilian Jiu-Jitsu will be a positive, motivating force in your life.",
       "heroCTA": "Start Your Free Trial",
       "communityLine": "JOIN A COMMUNITY THAT SUPPORTS YOUR GROWTH",
       "stats": [
-        {"number": "4", "label": "Black Belt Instructors"},
+        {"number": "5", "label": "Black Belt Instructors"},
         {"number": "100+", "label": "Happy Students"},
         {"number": "5", "label": "Star Rating"},
         {"number": "40+", "label": "Years of Experience"}
@@ -45,7 +44,6 @@
         {"name": "Adult Brazilian Jiu-Jitsu", "blurb": "Self-defense, fitness, and grappling for all skill levels. Welcoming, supportive environment. Build confidence, discipline, and physical strength while forming strong connections."},
         {"name": "Kids BJJ (Ages 5-7)", "blurb": "Playful, nurturing setting where kids develop coordination, focus, and self-confidence while learning basic self-defense and teamwork."},
         {"name": "Kids BJJ (Ages 8-12)", "blurb": "Builds confidence, discipline, and teamwork through fun, engaging Brazilian Jiu-Jitsu lessons. Self-defense, fitness, and respect in a safe environment."},
-        {"name": "Fitness & Weight Loss", "blurb": "Boost strength, cardio, and flexibility through functional training designed for all levels. Achieve peak performance on the mats and beyond."},
         {"name": "Competition Class", "blurb": "Advanced techniques, strategy, and mental toughness for aspiring competitors. Designed to help you dominate on the mats."}
       ],
       "affiliations": ["Tom DeBlass Affiliate", "Heroes Jiu-Jitsu Movement", "Adopt A Cop BJJ"],
@@ -62,20 +60,20 @@
         {"name": "Luke Moeller", "role": "Black Belt — 1 Stripe"},
         {"name": "Matt Jameson", "role": "Black Belt"},
         {"name": "Mike Peters", "role": "Black Belt"},
-        {"name": "Brooke Bertram", "role": "Black Belt"},
+        {"name": "Brooke Bertram", "role": "Brown Belt"},
         {"name": "Joseph Torres", "role": "Purple Belt — 2 Stripes"}
       ]
     },
     "schedule": {
       "heading": "Class Schedule",
-      "intro": "Live class schedule for adults and kids. Classes run multiple times a day across Adult Gi, Adult No-Gi, Kids (5-7), Kids (8-12), Fitness, and Competition. Tap any session below to claim your free trial.",
+      "intro": "Live class schedule for adults and kids. Classes run multiple times a day across Adult No-Gi, Kids (5-7), Kids (8-12), and Competition. Tap any session below to claim your free trial.",
       "note": "Specific times are kept up-to-date inside our member portal. Book a free trial to see this week's full schedule."
     },
     "pricing": {
       "heading": "Pricing",
       "intro": "Clear, straightforward pricing. No hidden fees, no long-term commitments. Choose the plan that fits you or your family.",
       "plans": [
-        {"name": "Adult Membership", "price": "$140", "period": "/mo", "features": ["Ongoing", "Unlimited classes", "All adult programs", "Includes Gi & No-Gi", "Includes Competition class"]},
+        {"name": "Adult Membership", "price": "$140", "period": "/mo", "features": ["Ongoing", "Unlimited classes", "All adult programs", "Includes Competition class"]},
         {"name": "Youth Membership", "price": "$110", "period": "/mo", "features": ["Ongoing", "Unlimited classes", "All kids programs (5-7 and 8-12)", "Promotion ceremonies included", "No promotion charges"]}
       ],
       "guarantees": [
@@ -93,7 +91,7 @@
       "heading": "Contact",
       "phone": "704-360-0159",
       "email": "mooresvillebjj@gmail.com",
-      "address": "243 Overhill Drive, Mooresville, NC 28117",
+      "address": "243 Overhill Drive Suite A, Mooresville, NC 28117",
       "mapEmbed": true
     },
     "faqs": {
@@ -121,16 +119,16 @@
         {"name": "Rj Johnston", "date": "Jul 26, 2024", "text": "This academy is great. Everybody was friendly and respectful. Great technical instruction from the coach. Great rolls with all the students. 100% recommended."},
         {"name": "Adam Hollar", "date": "Jul 26, 2024", "text": "Great place to train! The group and coaches are friendly, knowledgeable, and open to newcomers no matter the skill level. The facility is cleaned meticulously. The mat area is spacious, which is really what matters."},
         {"name": "Ricky Garcia", "date": "Jun 26, 2024", "text": "Absolutely love this place! My daughter has grown and excelled from the beginning and she loves coming here! Highly recommend!"},
-        {"name": "Jack Bogan", "date": "May 21, 2024", "text": "Really enjoyed my experience at Mooresville BJJ. I was brand new to the sport and the instructors were always so helpful. The people there were great too as they were competitive but also took the time to help me learn. I would highly recommend this gym to anyone no matter your experience level."},
-        {"name": "Bdub", "date": "Apr 21, 2024", "text": "The people, coaches, environment, and training are top notch. Everyone is friendly and helpful, two great things when you're trying out a new sport. The hardest step is the first one in the door. MOBJJ is one of my favorite places."},
+        {"name": "Jack Bogan", "date": "May 21, 2024", "text": "Really enjoyed my experience at Mooresville Brazilian Jiu-Jitsu. I was brand new to the sport and the instructors were always so helpful. The people there were great too as they were competitive but also took the time to help me learn. I would highly recommend this gym to anyone no matter your experience level."},
+        {"name": "Bdub", "date": "Apr 21, 2024", "text": "The people, coaches, environment, and training are top notch. Everyone is friendly and helpful, two great things when you're trying out a new sport. The hardest step is the first one in the door. Mooresville Brazilian Jiu-Jitsu is one of my favorite places."},
         {"name": "Georgina Petrosky", "date": "Apr 21, 2024", "text": "Mooresville Brazilian Jiu Jitsu creates a positive and respectful learning environment that fosters growth and confidence. The kids classes are perfect for learning fundamentals and understanding body awareness. We have seen our boys go from strength-to-strength."},
         {"name": "Ryan Frank", "date": "Mar 21, 2024", "text": "Absolutely wonderful experience, excellent coaching, and friendly teammates. When I joined here I was brand new at Jiu Jitsu and the coaching staff and teammates really helped me gain important competencies quickly alongside some hard-work."},
-        {"name": "Hayley Upright", "date": "Feb 21, 2024", "text": "MOBJJ is a wonderful place to learn discipline, confidence, and self defense. The coaches at MOBJJ are amazing — they go above and beyond to help you. I've gained more confidence and learned that I can do it. My size is not a disadvantage."}
+        {"name": "Hayley Upright", "date": "Feb 21, 2024", "text": "Mooresville Brazilian Jiu-Jitsu is a wonderful place to learn discipline, confidence, and self defense. The coaches at Mooresville Brazilian Jiu-Jitsu are amazing — they go above and beyond to help you. I've gained more confidence and learned that I can do it. My size is not a disadvantage."}
       ]
     },
     "affiliation": {
       "heading": "Tom DeBlass Affiliate",
-      "lead": "Mooresville BJJ proudly trains and tests under Professor Tom DeBlass — 2nd Degree Black Belt under Ricardo Almeida (Renzo Gracie 4th Degree).",
+      "lead": "Mooresville Brazilian Jiu-Jitsu proudly trains and tests under Professor Tom DeBlass — 2nd Degree Black Belt under Ricardo Almeida (Renzo Gracie 4th Degree).",
       "bio": "Tom DeBlass is a 2nd Degree Black Belt under Ricardo Almeida, a 4th Degree Black Belt under Renzo Gracie. Tom began martial arts at age 6 in Tae Kwon Do. In high school he was a county and state-sectional long jump champion. He has established himself as one of the best adult American Brazilian Jiu-Jitsu competitors — the ONLY person in NJ to win an adult Black Belt Pan American title and the ONLY person in NJ history to win the North American ADCC trials twice. He is also a UFC and Bellator veteran. Tom and his staff have built one of the largest BJJ academies in New Jersey — over 6,000 sq ft and close to 300 students."
     },
     "heroesJiuJitsu": {
@@ -146,16 +144,7 @@
     "competition": {
       "heading": "Competition",
       "lead": "Sharpen your skills, push your limits, train with focus and drive.",
-      "body": "At MOBJJ, we believe Jiu-Jitsu is for everyone — but for those who want to compete, we offer a specialized class dedicated to competition training. Each session begins with a dynamic warm-up, then focuses on faster-paced techniques and drills used in competitive scenarios. During live training (randori), you apply your skills in simulated competition settings, with immediate feedback and scoring. You don't need to be a competitor to attend — this is an advanced training environment for individuals seeking a higher level of instruction and challenging workouts. All training is conducted in a controlled, supportive atmosphere. Class schedules are posted based on upcoming local competitions."
-    },
-    "fitnessWeightLoss": {
-      "heading": "Fitness & Weight Loss",
-      "lead": "Lose weight, add muscle, learn a martial art — all at the same time.",
-      "body": "Working out at a regular gym becomes boring and repetitive. That leads to a lack of motivation and discipline. Every Jiu Jitsu class at MOBJJ is something new and different — and we hold each other accountable in an encouraging way.",
-      "qa": [
-        {"q": "I need to lose weight before trying Jiu-Jitsu… right?", "a": "Absolutely not. Jiu-Jitsu will get you in shape. Like everything you try, your first couple classes will be challenging, but it gets easier over time. Our instructors will help you meet your personal goals one step at a time."},
-        {"q": "Am I too old for Jiu-Jitsu?", "a": "Of course not. Jiu-Jitsu is for everyone. We tailor your training so you learn at your own pace and avoid injury. It doesn't matter if you're 7 or 70 — Jiu Jitsu has something to offer for everyone."}
-      ]
+      "body": "At Mooresville Brazilian Jiu-Jitsu, we believe Jiu-Jitsu is for everyone — but for those who want to compete, we offer a specialized class dedicated to competition training. Each session begins with a dynamic warm-up, then focuses on faster-paced techniques and drills used in competitive scenarios. During live training (randori), you apply your skills in simulated competition settings, with immediate feedback and scoring. You don't need to be a competitor to attend — this is an advanced training environment for individuals seeking a higher level of instruction and challenging workouts. All training is conducted in a controlled, supportive atmosphere. Class schedules are posted based on upcoming local competitions."
     },
     "dressCode": {
       "heading": "Dress Code",

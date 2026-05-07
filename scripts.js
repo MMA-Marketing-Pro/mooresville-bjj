@@ -377,6 +377,85 @@
     });
   }
 
+  function initBioModal() {
+    var modal = document.getElementById('bioModal');
+    if (!modal) return;
+
+    var titleEl = modal.querySelector('.bio-modal__title');
+    var roleEl = modal.querySelector('.bio-modal__role');
+    var bodyEl = modal.querySelector('.bio-modal__body');
+
+    var openModal = function (card) {
+      var name = card.querySelector('h3');
+      var role = card.querySelector('.instructor-card-role');
+      var bio = card.querySelector('.instructor-card-bio');
+
+      if (titleEl && name) titleEl.textContent = name.textContent;
+      if (roleEl && role) roleEl.textContent = role.textContent;
+      if (bodyEl && bio) bodyEl.innerHTML = bio.innerHTML;
+
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    };
+
+    var closeModal = function () {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    };
+
+    document.addEventListener('click', function (e) {
+      var trigger = e.target.closest('.instructor-card-bio-btn');
+      if (trigger) {
+        e.preventDefault();
+        var card = trigger.closest('.instructor-card');
+        if (card) openModal(card);
+        return;
+      }
+      if (e.target.closest('[data-close-bio-modal]')) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+    });
+  }
+
+  function initTipsModal() {
+    var modal = document.getElementById('tipsModal');
+    if (!modal) return;
+
+    var openModal = function () {
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    };
+
+    var closeModal = function () {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    };
+
+    document.addEventListener('click', function (e) {
+      var trigger = e.target.closest('[data-tips-modal]');
+      if (trigger) {
+        e.preventDefault();
+        openModal();
+        return;
+      }
+      if (e.target.closest('[data-close-tips-modal]')) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+    });
+  }
+
   function initAll() {
     initIcons();
     initYear();
@@ -387,6 +466,8 @@
     initStatCounters();
     initScrollReveals();
     initLeadModal();
+    initBioModal();
+    initTipsModal();
     initBookingPage();
     initMagneticButtons();
     initScrollRail();

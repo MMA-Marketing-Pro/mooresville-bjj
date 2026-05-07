@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.mooresvillebjj.com/</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,19 +14,19 @@
   </url>
   <url>
     <loc>https://www.mooresvillebjj.com/instructors</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.mooresvillebjj.com/schedule</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.mooresvillebjj.com/pricing</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -44,13 +44,13 @@
   </url>
   <url>
     <loc>https://www.mooresvillebjj.com/reviews</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.mooresvillebjj.com/affiliation</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -67,8 +67,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.mooresvillebjj.com/adult-bjj</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.mooresvillebjj.com/kids-5-7</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.mooresvillebjj.com/kids-8-12</loc>
+    <lastmod>2026-05-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.mooresvillebjj.com/faqs</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -79,14 +97,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.mooresvillebjj.com/fitness-weight-loss</loc>
-    <lastmod>2026-05-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.mooresvillebjj.com/dress-code</loc>
-    <lastmod>2026-05-03</lastmod>
+    <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
