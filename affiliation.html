@@ -76,11 +76,11 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="https://mooresville-brazilian-jiu-jitsu.gymdesk.com/login" target="_blank" rel="noopener noreferrer" class="nav-login-link"><i data-lucide="user" width="13" height="13"></i>Login</a></li>
       </ul>
-      <a class="nav-cta" href="booking.html">Free Class<i class="arrow" data-lucide="arrow-right" width="16" height="16"></i></a>
+      <button class="nav-cta" data-cta="lead-modal" type="button">Free Class</button>
       <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false"><i data-lucide="menu" width="20" height="20"></i></button>
       <div class="nav-mobile">
         <a href="index.html">Home</a><a href="instructors.html">Instructors</a><a href="schedule.html">Schedule</a><a href="pricing.html">Pricing</a><a href="https://mooresville-brazilian-jiu-jitsu.gymdesk.com/shop" target="_blank" rel="noopener noreferrer">Shop ↗</a><a href="affiliation.html">Tom DeBlass Lineage</a><a href="heroes-jiu-jitsu.html">Heroes Jiu-Jitsu</a><a href="adopt-a-cop.html">Adopt a Cop</a><a href="adult-bjj.html">Adult BJJ</a><a href="kids-5-7.html">Kids 5–7</a><a href="kids-8-12.html">Kids 8–12</a><a href="competition.html">Competition</a><a href="dress-code.html">Dress Code</a><a href="faqs.html">FAQs</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a><a href="https://mooresville-brazilian-jiu-jitsu.gymdesk.com/login" target="_blank" rel="noopener noreferrer">Login ↗</a>
-        <a class="nav-cta" href="booking.html">Free Class →</a>
+        <button class="nav-cta" data-cta="lead-modal" type="button">Free Class</button>
       </div>
     </div>
   </nav>
@@ -134,7 +134,7 @@
         <h2>A black belt that matters. <span class="dark-line">A teacher who is one.</span></h2>
         <p>Every instructor at Mooresville Brazilian Jiu-Jitsu is a black belt who tests and progresses under Professor Tom DeBlass. That's the room you walk into for your free class.</p>
         <div class="big-cta-ctas">
-          <a class="btn btn-primary" href="booking.html">Claim My Free Class<i class="arrow" data-lucide="arrow-right" width="18" height="18"></i></a>
+          <button class="btn btn-primary" data-cta="lead-modal" type="button">Claim My Free Class<i class="arrow" data-lucide="arrow-right" width="18" height="18"></i></button>
           <a href="instructors.html" class="btn btn-ghost"><i data-lucide="users" width="18" height="18"></i>Meet Our Instructors</a>
         </div>
       </div>
@@ -154,7 +154,22 @@
     </div>
   </footer>
 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <div class="lead-modal" id="leadModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="leadModalTitle">
+    <div class="lead-modal__backdrop" data-close-modal></div>
+    <div class="lead-modal__card">
+      <div class="lead-modal__header"><button class="lead-modal__close" data-close-modal type="button" aria-label="Close"><i data-lucide="x" width="18" height="18"></i></button><div class="lead-modal__step">Step 1 of 2</div><h2 class="lead-modal__title" id="leadModalTitle">Claim Your Free Class</h2><p class="lead-modal__sub">Fill this out and we'll show you our class calendar on the next step.</p></div>
+      <form class="lead-modal__body" novalidate>
+        <div class="lead-modal__row"><div class="form-field"><label for="firstName">First Name</label><input type="text" id="firstName" name="firstName" autocomplete="given-name" required><span class="form-field-error">Please enter your first name.</span></div><div class="form-field"><label for="lastName">Last Name</label><input type="text" id="lastName" name="lastName" autocomplete="family-name" required><span class="form-field-error">Please enter your last name.</span></div></div>
+        <div class="form-field"><label for="email">Email Address</label><input type="email" id="email" name="email" autocomplete="email" required><span class="form-field-error">Please enter a valid email address.</span></div>
+        <div class="form-field"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(###) ###-####" required><span class="form-field-error">Please enter your phone number.</span></div>
+        <div class="form-field"><label for="program">Which Class Interests You?</label><select id="program" name="program" required><option value="">Choose a class…</option><option value="adult-bjj">Adult Brazilian Jiu-Jitsu (Ages 14+)</option><option value="kids-bjj-5-7">Kids Jiu-Jitsu (Ages 5-7)</option><option value="kids-bjj-8-12">Kids Jiu-Jitsu (Ages 8-12)</option><option value="competition">Competition Class</option><option value="heroes">Heroes Jiu-Jitsu (Veterans / First Responders / Teachers)</option></select><span class="form-field-error">Please choose a class.</span></div>
+        <button type="submit" class="lead-modal__submit">Continue to Booking<i data-lucide="arrow-right" width="16" height="16"></i></button>
+        <p class="lead-modal__footer-note">First class free. No contract. No sign-up fee.</p>
+      </form>
+    </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="scripts.js"></script>
